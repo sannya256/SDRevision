@@ -48,7 +48,11 @@ app.get("/student/:id", function(req, res) {
 // Add /students endpoint
 app.get("/students", function(req, res) {
   // Return "All students"
-  res.send("All students");
+  // res.send("All students");
+// call getStudents on data
+  data.getStudents(function(students) {
+      res.json(students);
+  });
 });
 
 // Start listening on port 3000

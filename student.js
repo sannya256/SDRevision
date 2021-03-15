@@ -26,7 +26,7 @@ exports.Programme = class {
   // Programme name
   name;
   // Programme modules
-  modules = [];
+  modules = []; // why is it an array for modules??
 
   constructor(code, name) {
     this.code = code;
